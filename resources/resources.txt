@@ -1,0 +1,48 @@
+
+* Find better ways of downsampling:
+  https://www.saama.com/different-kinds-convolutional-filters/ ==> this contains some info on some downsampling techniques
+
+* Building a convolution Neural Network in Keras
+  https://towardsdatascience.com/building-a-convolutional-neural-network-cnn-in-keras-329fbbadc5f5
+
+
+* Tensor flow official Documentation
+  https://keras.io/layers/convolutional/
+
+* Understanding U-Net Architecture
+  https://towardsdatascience.com/understanding-semantic-segmentation-with-unet-6be4f42d4b47
+
+* Up-sampling using Transpose convolution
+  https://medium.com/activating-robotic-minds/up-sampling-with-transposed-convolution-9ae4f2df52d0
+
+
+
+*To improve performance
+
+	https://machinelearningmastery.com/improve-deep-learning-performance/
+
+	Diagnostics.
+	Weight Initialization.
+	Learning Rate.
+	Activation Functions.
+	Network Topology.
+	Batches and Epochs.
+	Regularization.
+	Optimization and Loss.
+	Early Stopping.
+
+
+	Each time you train the network, you initialize it with different weights and it 	converges to a different set of final weights. Repeat this process many times to 	create many networks, then combine the predictions of these networks.
+
+
+*Combine Views
+	
+	As above, but train each network on a different view or framing of your problem.
+
+	Again, the objective is to have models that are skillful, but in different ways 	(e.g. uncorrelated predictions).
+
+	You can lean on the very different scaling and transform techniques listed above 	in the Data section for ideas.
+
+	The more different the transforms and framing of the problem used to train the 		different models, the more likely your results will improve.
+
+	Using a simple mean of predictions would be a good start.
